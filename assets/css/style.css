@@ -1,0 +1,148 @@
+/* Font: Roboto
+Farben: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+ /* ====General==== */
+ *{
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+.companyLogo{
+    width:2rem;
+}
+/* ===header=== */
+.titelLogo{
+    display:flex;
+    height: 90px;
+    padding:2%; 
+    align-items:center;
+}
+.companyLogo{
+    margin-right: 0.5rem;
+}
+.companyName span{
+    font-size: 0.1rem;
+}
+.container{
+    display: flex;
+    justify-content:space-between;
+}
+.ilu{
+    position: relative;
+    flex: 1;
+
+}
+#ilus1{
+    height:64vh;
+}
+#people{
+    position: absolute;
+    height: 64vh;
+    left:-71px;
+}
+.content{
+position: relative;
+top:-15.125rem;
+padding:5%;
+width:600px;
+height:400px;
+}
+.content h2{
+    font-size:3rem;
+}
+.portfolio{
+    width:100vw;
+}
+#folio{
+    width:100%;
+}
+
+/* ===main=== */
+
+.idea{
+    display: flex;
+    padding: 10%;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap:20px;
+}
+.idea h3{
+    font-size: 3rem;
+}
+.idea .b{
+    width: 40%;
+}
+
+@media (max-width: 768px){
+    .idea{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* ===grid==== */
+.grid{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    padding:10%;
+    gap:20px;
+    justify-content:center;
+    align-items: center;
+}
+.grid .c{
+   grid-column:1/ span 2;
+   font-size:3rem;
+   width: 38.625rem;
+   margin-bottom:40px;
+}
+@media (max-width: 768px){
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* ===grid2=== */
+.grid2{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: repeat(6,1fr);
+    padding:10%;
+    gap:20px;
+    justify-content:center;
+    align-items: center;
+}
+
+.h {
+    grid-column: 1/span 2;
+    font-size:1.5rem;
+    text-align:center;
+}
+.challenge{
+    grid-column: 1/span 2;
+    text-align: center;
+}
+.challenge .email{
+    padding:2% 12%;
+    margin-bottom:30px;
+    margin-top:30px;
+}
+.challenge .subscribe{
+    padding:2% 8%;
+    background-color:pink;
+}
+
+@media (max-width: 768px){
+    .grid2{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* ===footer=== */
+footer{
+    padding-left:10%;
+}
